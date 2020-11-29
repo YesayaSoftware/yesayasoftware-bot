@@ -8,10 +8,21 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - latest_posts
+  - categories
+  - corona_state
+  - latest_post
+
+entities:
+  - state
+  - category
+
+actions:
+  - action_latest_post
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Ebwana niko poa! Mishe zinaendaje?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -21,13 +32,28 @@ responses:
   - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+  - text: "Fresh kabisa, nikusaidie nini?"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Goodbye :("
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+    buttons:
+    - title: "great"
+      payload: "/mood_great"
+    - title: "super sad"
+      payload: "/mood_sad"
+
+  action_corona_tracker:
+  - text: "{state}"
+
+  utter_latest_post:
+  - text: "{title}"
+    image: "{thumbnail}"
+
+  utter_categories:
+  - text: "Hebu niambie, unataka machapisho kutoka kundi gani?"
 
 session_config:
   session_expiration_time: 60

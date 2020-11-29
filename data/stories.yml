@@ -28,3 +28,24 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: happy latest_posts
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - intent: latest_posts
+  - action: utter_categories
+  - intent: categories
+  - action: action_corona_tracker
+
+- story: corona tracker path
+  steps:
+    - intent: corona_state
+    - action: action_corona_tracker
+
+- story: latest post path
+  steps:
+    - intent: latest_post
+    - action: action_latest_post

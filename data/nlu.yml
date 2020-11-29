@@ -55,6 +55,7 @@ nlu:
   examples: |
     - perfect
     - great
+    - zinasonga
     - amazing
     - feeling like a king
     - wonderful
@@ -91,3 +92,31 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: latest_posts
+  examples: |
+    - nipe chapisho jipya
+    - what's new?
+    - nini kipya?
+    - show me latest post
+
+- intent: categories
+  examples: |
+    - laravel
+    - kotlin
+    - android
+    - vuejs
+
+- intent: corona_state
+  examples: |
+    - [india](state)
+    - [corona](state)
+    - [delhi](state)
+    - [goa](state)
+
+- intent: latest_post
+  examples: |
+    - [kotlin](category)
+    - [laravel](category)
+    - [vuejs](category)
+    - [tailwind](category)
