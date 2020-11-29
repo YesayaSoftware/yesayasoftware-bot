@@ -4,6 +4,7 @@ nlu:
 - intent: greet
   examples: |
     - hey
+    - mambo
     - hello
     - hi
     - hello there
