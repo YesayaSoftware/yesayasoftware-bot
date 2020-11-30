@@ -26,7 +26,7 @@ class ActionLatestPost(Action):
         return []
 
     def latestPosts(self, tracker):
-        api_address = 'http://yesayasoftware.test/api/posts'
+        api_address = 'https://yesayasoftware.co.tz/api/posts'
 
         response = requests.get(api_address).json()
 
